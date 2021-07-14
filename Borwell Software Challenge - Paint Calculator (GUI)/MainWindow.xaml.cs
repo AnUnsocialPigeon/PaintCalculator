@@ -2,7 +2,11 @@
 /// Jake Turrell
 /// Started: 14/07/2021
 /// Start: 20:20
-/// Finish: 20:50
+/// Finish: 20:50 V1
+/// 
+/// V2:
+/// Start: 21:08
+/// Finish: 12:23
 /// </summary>
 using System.Windows;
 
@@ -26,11 +30,10 @@ namespace Borwell_Software_Challenge___Paint_Calculator__GUI_ {
             // Var init.
             // For storing the data, and also for storing bools of what is valid.
             // This can be used later for more advanced error checking
-            float fWidth, fLength, fHeight;
             bool[] baValids = {
-                float.TryParse(Width_TXTBOX.Text, out fWidth),
-                float.TryParse(Length_TXTBOX.Text, out fLength),
-                float.TryParse(Height_TXTBOX.Text, out fHeight)
+                float.TryParse(Width_TXTBOX.Text, out float fWidth),
+                float.TryParse(Length_TXTBOX.Text, out float fLength),
+                float.TryParse(Height_TXTBOX.Text, out float fHeight)
             };
 
 
@@ -42,12 +45,14 @@ namespace Borwell_Software_Challenge___Paint_Calculator__GUI_ {
                 float fVolume = fWidth * fLength * fHeight;
 
                 // Display 
-                MessageBox.Show(caption: "Results", button: MessageBoxButton.OK,
-                    messageBoxText:
-                    "Floor Area: " + fFloorArea +
-                    " m^2\nPaint for Walls: " + fPaint +
-                    " m^2\nRoom Volume: " + fVolume + " m^3"
-                );
+                Results_TXTBLOCK.Text = "Results: " +
+                    "\nFloor Area: " + fFloorArea +
+                    "m²\nPaint for Walls: " + fPaint +
+                    "m²\nRoom Volume: " + fVolume + "m³";
+                // Reset all other boxes
+                Width_TXTBOX.Text = "";
+                Length_TXTBOX.Text = "";
+                Height_TXTBOX.Text = "";
             }
 
             // Upon failure
@@ -59,7 +64,20 @@ namespace Borwell_Software_Challenge___Paint_Calculator__GUI_ {
 
         }
 
+        /// <summary>
+        /// Reset Button pressed
+        /// Will reset all boxes
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Reset_BTN_Click(object sender, RoutedEventArgs e) {
 
+            // RESETTTTTTT
+            Results_TXTBLOCK.Text = "Results: ";
+            Width_TXTBOX.Text = "";
+            Length_TXTBOX.Text = "";
+            Height_TXTBOX.Text = "";
+        }
 
     }
 }   

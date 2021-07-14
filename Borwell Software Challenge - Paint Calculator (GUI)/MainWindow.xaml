@@ -5,15 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Borwell_Software_Challenge___Paint_Calculator__GUI_"
         mc:Ignorable="d"
-        Title="Paint Calculator" Height="150" Width="200">
+        Title="Paint Calculator" Height="160" Width="430">
     <Grid>
-        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Width: " VerticalAlignment="Top"/>
-        <TextBox Name="Width_TXTBOX" HorizontalAlignment="Left" Height="17" Margin="53,9,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBlock HorizontalAlignment="Left" Margin="10,31,0,0" TextWrapping="Wrap" Text="Length: " VerticalAlignment="Top"/>
-        <TextBox x:Name="Length_TXTBOX" HorizontalAlignment="Left" Height="17" Margin="53,31,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBlock HorizontalAlignment="Left" Margin="10,52,0,0" TextWrapping="Wrap" Text="Height: " VerticalAlignment="Top"/>
-        <TextBox x:Name="Height_TXTBOX" HorizontalAlignment="Left" Height="17" Margin="53,53,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <Button Name="Submit_BTN" Content="Submit" HorizontalAlignment="Center" Margin="60,0,57,10" VerticalAlignment="Bottom" Width="75" Click="Submit_BTN_Click"/>
+        <Rectangle Fill="#e5d2f7" HorizontalAlignment="Center" Height="119" Stroke="#e5d2f7" VerticalAlignment="Center" Width="202" Margin="0,0,190,0"/>
+
+        <TextBlock HorizontalAlignment="Center" Margin="-325,10,0,0" TextWrapping="Wrap" Text="Width: " VerticalAlignment="Top" FontWeight="Bold"/>
+        <TextBox x:Name="Width_TXTBOX" HorizontalAlignment="Center" Height="17" Margin="-153,9,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Center" Margin="-325,31,0,0" TextWrapping="Wrap" Text="Length: " VerticalAlignment="Top" FontWeight="Bold"/>
+        <TextBox x:Name="Length_TXTBOX" HorizontalAlignment="Center" Height="17" Margin="-153,31,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Center" Margin="-325,52,0,0" TextWrapping="Wrap" Text="Height: " VerticalAlignment="Top" FontWeight="Bold"/>
+        <TextBox x:Name="Height_TXTBOX" HorizontalAlignment="Center" Height="17" Margin="-153,53,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="Submit_BTN" Content="Submit" HorizontalAlignment="Center" Margin="10,75,212,10" VerticalAlignment="Center" Width="170" Click="Submit_BTN_Click" Height="34" FontSize="16"/>
+        <Rectangle Fill="#dab6fc" HorizontalAlignment="Center" Height="119" Stroke="#dab6fc" VerticalAlignment="Center" Width="190" Margin="202,0,0,0"/>
+        <Button x:Name="Reset_BTN" Content="Reset" HorizontalAlignment="Center" Margin="325,98,10,10" VerticalAlignment="Center" Width="67" Click="Reset_BTN_Click" Height="21" FontSize="12"/>
+        <TextBlock x:Name="Results_TXTBLOCK" HorizontalAlignment="Center" Height="79" Margin="212,14,15,36" TextWrapping="Wrap" Text="Results: " VerticalAlignment="Center" Width="175" FontWeight="Bold" FontSize="13"/>
 
     </Grid>
 </Window>
