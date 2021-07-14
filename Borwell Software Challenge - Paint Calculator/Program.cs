@@ -3,7 +3,7 @@
 /// Started: 10:28
 /// Paused: 10:57
 /// Resumed: 20:05
-/// Finished: N/A
+/// Finished: 20:13
 
 using System;
 namespace Borwell_Software_Challenge___Paint_Calculator {
