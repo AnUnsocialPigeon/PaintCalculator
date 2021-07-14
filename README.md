@@ -4,7 +4,7 @@ Borwell Software Challenge
 This is a program that will get the area of the floor, the amount of paint for the walls, and also the volume of the room from user given input.
 
 ###### How to build + run ######  
-You will find a .exe under the path Releases tag. 
+You will find a .exe under the path Releases tag in the .zip on any branch. This .exe, along with its dependancies need to be put in the same file location as each other (uncompressed)
 
 Assumptions made: 
   - Room is 1 "square"
