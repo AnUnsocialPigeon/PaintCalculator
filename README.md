@@ -10,3 +10,9 @@ Assumptions made:
   - Walls require 1 coat of paint
   - Cant have a room less than or equal to 0cm large in any direction
   
+Things to add: 
+  - Scalable resolution
+    - i dont know how to do that :(
+  - Nicer formatting somehow
+  - Metric Conversions?
+  - 
